@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+        .md{
+            margin-left: 500px;
+            margin-top: 100px;
+            border: 7px solid;
+            height: 683px;
+            width: 385px;
+            border-radius: 54px;
+        }
+         .header{
+            border: 1px solid rgba(237, 238, 236, 0.5);
+            height: 94px;
+            width: 385px;
+            background-color: rgba(237, 238, 236, 0.5);
+            border-top-left-radius: 50px ;
+            border-top-right-radius: 50px ;
+        }
+        .time{
+            position: relative;
+            right: 120px;
+            top: -59px;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .net{
+            position: relative;
+            left: 272px;
+            top: -116px;
+            font-size: 16px;
+        }
+        .wif{
+            position: relative;
+            left: 279px;
+            top: -116px;
+            font-size: 16px;
+        }
+        .batt{
+            position: relative;
+            left: 289px;
+            top: -116px;
+            font-size: 16px;
+            background-color: yellow;
+            
+        }
+        .profile{
+            border: 1px solid;
+            border-radius: 40px;
+            height: 50px;
+            width: 50px;
+            position: relative;
+            bottom: -30px;
+            left: 50px;
+        }
+        .dynamic{
+            border: 3px solid;
+            position: relative;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px ;
+            height: 34px;
+            width: 125px;
+            top: -90px;
+            left: 126px ;
+            background-color: black;
+        }
+        .icon{
+            font-size: 20px;
+            position: relative;
+            left: 200px;
+            color: blue;
+        }
+        .icon2{
+                font-size: 20px;
+                 position: relative;
+                left: 240px;
+                color: blue;
+        }
+        .icon3{
+                font-size: 20px;
+                position: relative;
+                right: 126px;
+                color: blue;
+        }
+        .un{
+            position: relative;
+            font-size: 20px;
+            top: -540px;
+            left: 79px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .un1{
+            position: relative;
+            font-size: 10px;
+            top: -520px;
+            right: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+            animation: fadeIn 5s;
+        }
+        .un2{
+            position: relative;
+            right: 130px;
+            font-size: 20px;
+            color: blue;
+        }
+        .b1{
+            border: 1px solid white ;
+            position: relative;
+            height: 490px;
+            width: 385px;
+            background-image: url("./wa2.jpg");
+            overflow-y: scroll;
+            scrollbar-width: none;  
+        }
+        .mon{
+            position: sticky;
+            padding-right: -11spx;
+            background-color: rgba(237, 238, 236, 0.963);
+            border: 2px solid rgba(237, 238, 236, 0.963);
+            border-radius: 20px;
+            width: 55px;
+            left: 163px;
+            line-height: 3px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 5px;
+            padding-left: 9px;
+            top: 0px;
+        }
+        h1{
+            position: sticky;
+            /* top: 2px;  */
+        }
+        .yest{
+                border: 1px solid;
+                height:16px;
+                width: 55px;
+                font-size: 7px;
+                border-radius: 9px;
+                margin-left: 165px; 
+                font-weight: lighter;
+                padding-left:6px;
+                /* margin-left: 3px; */
+                line-height: 3px;
+                background-color: rgba(237, 238, 236, 0.963);
+                border: 2px solid rgba(237, 238, 236, 0.963);
+                font-family: Arial, Helvetica, sans-serif;   
+                position: sticky;
+                top:0px;
+                z-index: 1;
+        }
+        h2{
+            position: sticky;
+            /* top: 1px;
+            font-size: 11px;
+            padding-bottom:-2px; */
+        }
+        .today{
+            border: 1px solid;
+                height:16px;
+                width: 55px;
+                font-size: 12px;
+                border-radius: 9px;
+                background-color: rgba(237, 238, 236, 0.963);
+                border: 2px solid rgba(237, 238, 236, 0.963);
+                font-family: Arial, Helvetica, sans-serif;   
+                position: sticky;
+                margin-left: 170px; 
+                top:15px;
+        }
+        .txt{
+            border: 1px solid  white;
+            border-radius: 6px;
+            padding-top: 6px;
+            padding-bottom: 3pxc;
+            padding-left: 5px;
+            height: 29px;
+            width: 110px;
+            position: relative;
+            left: 10px;
+            background-color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+        
+        }
+        .t1{
+            font-size: 7px;
+            margin-left: 73px;
+            margin-top: 2px;
+            color: gray;
+        }
+        .txt1{
+            border: 1px solid  #DCF8C6;
+            border-radius: 10px;
+            padding-top: 6px;
+            padding-bottom: 3pxc;
+            padding-left: 5px;
+            height: 29px;
+            width: 110px;
+            position: relative;
+            right: -257px;
+            background-color: #DCF8C6;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+        }
+        .t2{
+            font-size: 7px;
+            margin-left: 73px;
+        }
+        .vc{
+            border: 4px solid white ;
+            height: 55px;
+            /* padding-top: 10px; */
+            position: relative;
+            padding-left: 46px;
+            left: 10px;
+            width: 150px;
+            font-size: 9px;
+            /* z-index: -1; */
+            border-radius: 9px;
+            background-color: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+            /* z-index: -1; */
+        }
+        .icon7{
+            position: relative;
+            right: 33px;
+            top: -18px;
+            /* z-index: -1; */
+        }
+        .t3{
+            font-size: 7px;
+            margin-left: 73px;
+            margin-top: -15px;
+            position: relative;
+            left: 34px;
+            top: -10px;
+            color: gray;
+        }
+        .t4{
+            position: relative;
+            left: 35px;
+            top: -5px;
+        }
+        .t5{
+            font-size: 10px;
+            position: relative;
+            top: -28px;
+            font-size: 12px;
+            color: rgb(177, 176, 176);
+        }
+        .footer{
+            border: 1px solid rgba(237, 238, 236, 0.5);
+            background-color: rgba(237, 238, 236, 0.5);
+            height: 94px;
+            width: 385px;
+            border-bottom-left-radius: 50px ;
+            border-bottom-right-radius: 50px;
+            position: relative;
+        }  
+        .img1{
+            border: 2px solid;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            padding: 5px;
+            position: relative;
+            left: 240px;
+            top: 7px;
+            font-size: x-small;
+            color: blue;
+        }
+        .icon4{
+            font-size: 20px;
+            position: relative;
+            right: 232px;
+            color: blue;
+            top: 9px;
+        }
+        .icon5{
+            font-size: 20px;
+            position: relative;
+            left: 32px;
+            color: blue;
+            top: 9px;
+        }
+        .icon6{
+            font-size: 20px;
+            position: relative;
+            left: 60px;
+            color: blue;
+            top: 9px;
+        }
+        .icon8{
+            font-size: 16px;
+            position: relative;
+            right: 70px;
+            color: blue;
+            top: 11px;
+        }
+        .cd{
+            border: 1px solid;
+            border-radius: 20px;
+            height: 25px;
+            width: 173px;
+            position: relative;
+            left: 37px;
+            top: -15px;
+        }
+        .cd1{
+            border: 3px solid;
+            border-radius: 5px;
+            position: relative;
+            top: 20px;
+            left: 95px;
+            width: 150px;
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="md">
+    <div class= "header">
+    <!-- <div class="profile"></div> -->
+    <img src="./daddy.jpg" width="50px" height="50px" style="border-radius: 50% ; margin-top: 30px; margin-left: 30px; position: relative; left: 23px; top: 8px;" >
+    <span class="icon"><i class="fa fa-video-camera" aria-hidden="true"></i></span>
+    <span class="icon2"><i class="fa fa-phone" aria-hidden="true"></i></span>
+    <span class="icon3"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+    <span class="un2"><b>11</b></span>
+    <span class="time">9:59</span>
+    <div class="dynamic"></div>
+    <span class="net"><i class="fa-solid fa-signal"></i></span>
+    <span class="wif"><i class="fa-solid fa-wifi"></i></span>
+    <span class="batt"><i class="fa-solid fa-battery-three-quarters"></i></span>
+    </div>
+    <div class="b1">
+    <div class="mon"><h1>Monday</h1></div>
+    <div class="txt">Hello Amma
+        <div class="t1">7:02 AM</div>
+        <span><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color: blue;"></i></span>
+    </div>
+    <div class="txt1">Hy Daddy
+        <div class="t2">7:42 AM</div>
+        <span><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color: blue;"></i></span>
+    </div>
+    <div class="txt">Had breakfast?
+        <div class="t1">8:00 AM</div>
+        <span><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color: blue;"></i></span>
+    </div>
+    <div class="txt1">Yes
+        <div class="t2">8:02 AM</div>
+        <span><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color: blue;"></i></span>
+    </div> 
+    <div class="txt">Where r u??
+        <div class="t1">6:02PM</div>
+        <span><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color: blue;"></i></span>
+    </div>
+    <div class="txt1">I'm in class
+        <div class="t2">6:07PM</div>
+        <span><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color: blue;"></i></span>
+        <div style="border: 1px solid; width: 25px; padding-left: 2px; border-color: white; border-radius: 9px;background-color: #ffffff;position: relative; top: -10px; left: 73px;">👍</div>
+    </div>
+    <div class="txt">Hello Amma
+        <div class="t1">8:02PM</div>
+        <span><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color: blue;"></i></span>
+    </div>
+    <div class="txt1">Hy Daddy
+        <div class="t2">8:42PM</div>
+        <span><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color: blue;"></i></span>
+    </div>
+    <div class = "yest"><h2>Yesterday</h2></div>
+    <div class="txt">Gud Mrng Amma
+        <div class="t1">8:02AM</div>
+        <span><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color: blue;"></i></span>
+        <div style="border: 1px solid; width: 25px; padding-left: 2px; border-color: white; border-radius: 9px;background-color: #ffffff;position: relative; top: -12px; left: 73px;">❤️</div>
+    </div>
+    <div class="txt1">Gud mrng Daddy
+        <div class="t2">8:12AM</div>
+        <span><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color: blue;"></i></span>
+    </div>
+    <div class="txt">Hello Amma
+        <div class="t1">5:02PM</div>
+        <span><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color: blue;"></i></span>
+    </div>
+    <div class="txt1">Hy Daddy
+        <div class="t2">5:45PM</div>
+        <span><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color: blue;"></i></span>
+    </div>
+    <div class="txt">reached hostel?
+        <div class="t1">5:50PM</div>
+        <span><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color: blue"></i></span>
+    </div>
+    <div class="txt1">Just now
+        <div class="t2">6:02PM</div>
+        <span><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color: blue;"></i></span>
+    </div>
+    <div class="vc">
+        <h2>Missed video call</h2>
+        <div class="icon7"><i class="fa fa-video-camera" style="font-size:20px;color:red"></i></div>
+        <div><i class="fa-solid fa-arrow-down-left"></i></div>
+        <div class="t3">6:22PM</div>
+        <span class="t4"><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color: blue;"></i></span>
+        <span class="t5">Tap to call back</span>
+    </div>
+    <div class="txt1">I'll call u later
+        <div class="t2">6:27PM</div>
+        <span><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color: blue;"></i></span>
+    </div>
+    <div><img src="./phone.jpg" style="height: 190px; width: 160px; position: relative; left: 20px; top: 20px; border: 5px solid; border-radius: 10px; border-color: white;">
+        <!-- <div style="font-size: 7px; font-family: Arial, Helvetica, sans-serif; color: black; margin-left: 180px; z-index: -1;">5:02PM</div> -->
+        <div style="border: 1px solid; width: 25px; padding-left: 2px; border-color: white; border-radius: 9px;background-color: #ffffff;position: relative; top: -5px; left: 153px;">👍</div>
+        
+        <!-- <P style="margin-left: 180px;margin-top:-30px;z-index: -1;">05:02</P> -->
+        <!-- <span><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color: blue;"></i></span> -->
+    </div>
+    <div class="txt1">thq daddy
+        <div class="t2">5:02PM</div>
+        <span><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color: blue;"></i></span>
+    </div>
+    <div class = "today"><h3 style="font-size: 11px;line-height: 3px; position: relative; top: -5px; left: 8px;">Today</h3></div>
+    <div class="txt">Hy Amma
+        <div class="t1">8:00 AM</div>
+        <span><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color: blue;"></i></span>
+    </div>
+    <div class="txt1">Hy Daddy
+        <div class="t2">8:02AM</div>
+        <span><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color:blue;"></i></span>
+    </div>
+    <div class="txt">Share me pdf
+        <div class="t1">5:02PM</div>
+        <span><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color: blue;"></i></span>
+    </div>
+    <div class="txt1">okay!!
+        <div class="t2">5:02PM</div>
+        <span><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color: blue;"></i></span>
+    </div>
+    <div class="txt">Had dinner?
+        <div class="t1">8:02PM</div>
+        <span><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color: blue;"></i></span>
+    </div>
+    <div class="txt1">Noo daddy
+        <div class="t2">8:04PM</div>
+        <span><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color: blue;"></i></span>
+    </div>
+    <div class="txt">why?
+        <div class="t1">8:06PM</div>
+        <span><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color: gray;"></i></span>
+    </div>
+    <div class="txt1">I'll eat now
+        <div class="t2">8:04PM</div>
+        <span><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color: blue;"></i></span>
+    </div>
+    <div class="txt">don't skip meal
+        <div class="t1">8:06PM</div>
+        <span><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color: gray;"></i></span>
+    </div>
+    <div class="txt1">okay 👍
+        <div class="t2">8:04PM</div>
+        <span><i class='fas fa-check-double' style="font-size: 8px; position: relative; top: -17px; left: 100px; color: blue;"></i></span>
+    </div>
+    </div>
+    <div class="footer">
+     <span class="img1"><i class="fa fa-inr" aria-hidden="true"></i></span>
+     <span class="un"><b>Daddy❤️</b></span>
+     <span class="un1">last seen today at 6:30PM</span>
+     <span class="icon4"><i class="fa fa-plus" aria-hidden="true"></i></span>
+     <span class="icon8"><i class="fa-solid fa-file"></i></span>
+     <span class="icon5"><i class="fa fa-camera" aria-hidden="true"></i></span>
+     <span class="icon6"><i class="fa fa-microphone" aria-hidden="true"></i></span>
+     <div class="cd"></div>
+     <div class="cd1"></div>
+    </div>
+</div>
+</body>
+</html>
